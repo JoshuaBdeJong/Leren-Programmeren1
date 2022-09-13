@@ -1,14 +1,15 @@
-aantalpersonen = 4
+#Prijs dagje-uit in speelhal
+
+aantalpersonen = int (input ('Met hoeveel personen? '))
 
 toegangsticket = 7.45
 entree = aantalpersonen * toegangsticket
 
-Seat = 0.37
-aantalminuten = 5
-keerminuten = 9
-kosten_seat = aantalminuten * keerminuten
+seat_per5minuten = 0.37
+aantalminuten = int (input ('Hoeveel minuten wil je zitten? '))
+prijs_seatpp = 3.70
+kosten_seat = prijs_seatpp * aantalpersonen
 
 betalen = entree + kosten_seat
 
-print ('Dit geweldige dagje-uit met', aantalpersonen, 'mensen in de Speelhal met', aantalminuten, 'minuten VR kost je maar', kosten_seat, 'euro')
-
+print (f'Dit geweldige dagje-uit met {aantalpersonen} mensen in de Speelhal met {aantalminuten} minuten VR kost je maar {betalen} euro!')

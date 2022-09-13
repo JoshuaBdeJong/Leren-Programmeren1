@@ -14,4 +14,4 @@ kortingsbon_totaal = kortingsbon * aantal_kortingsbon
 
 prijs_totaal = prijs_croissant_totaal + prijs_stokbrood_totaal - kortingsbon_totaal
 
-print ("De feestlunch kost je bij de bakker", prijs_totaal, "euro voor de", aantal_croissant, " croissantjes en de", aantal_stokbrood, "stokbroden als de", aantal_kortingsbon, "kortingsbonnen nog geldig zijn!")
+print (f'De feestlunch kost je bij de bakker' {prijs_totaal} 'euro voor de' {aantal_croissant} 'croissantjes en de' {aantal_stokbrood} 'stokbroden als de' {aantal_kortingsbon} 'kortingsbonnen nog geldig zijn!')
