@@ -6,7 +6,9 @@ entree = aantalpersonen * toegangsticket
 Seat = 0.37
 aantalminuten = 5
 keerminuten = 9
+kosten_seat = aantalminuten * keerminuten
 
-betalen = entree + Seat * keerminuten
+betalen = entree + kosten_seat
 
-print ('Te betalen', betalen)
+print ('Dit geweldige dagje-uit met', aantalpersonen, 'mensen in de Speelhal met', aantalminuten, 'minuten VR kost je maar', kosten_seat, 'euro')
+
