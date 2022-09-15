@@ -6,6 +6,10 @@ y = min(a, b)
 
 if a > b:
     print('a is het grootste getal: ', (x))
-
 elif a < b:
-    print ('a is het kleinstge getal', (y))
+    print ('a is het kleinste getal', (y))
+elif a == b:
+    print ('a en b zijn even groot')
+
+print('Het minimum is: ',(y))
+print ('Het maximum is: ',(x))
