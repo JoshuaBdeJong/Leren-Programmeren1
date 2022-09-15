@@ -16,9 +16,9 @@ prijs_totaal = prijs_totaal_small + prijs_totaal_medium + prijs_totaal_large
 # Bonnetje
 print (f"""
 --------------------------------------------------------------------
-| {aantal_small} small X 4.99
-| {aantal_medium} medium X 7.99
-| {aantal_large} large X 9.99
+| {aantal_small} small X {prijs_small}
+| {aantal_medium} medium X {prijs_medium}
+| {aantal_large} large X {prijs_large}
 --------------------------------------------------------------------
 | Totaalprijs: {prijs_totaal}
 --------------------------------------------------------------------""")
