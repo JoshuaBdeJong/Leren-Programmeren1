@@ -20,9 +20,6 @@ else:
 lengte = int (input('Hoelang bent u in cm? '))
 gewicht = int (input('Hoeveel weegt u in kg? '))
 certificaat = input("Heeft u het certificaat, 'overleven met gevaarlijk personeel'? (J/N) ")
-fav_eten = str (input('Wat is uw favoriete eten? '))
-if fav_eten == 'Kip' or 'kip':
-    raise NameError('Kip?!, aangenomen!')
 
 #aantal behaalde punten
 s = 0
@@ -39,21 +36,21 @@ if ervaring <= 4:
         if ervaring3 > 3:
             s += 1
 
-if diploma == "j":
+if diploma == 'j':
     s += 1
 
-if bewijs == "j":
+if bewijs == 'j':
     s += 1
 
-if hoed == "j":
+if hoed == 'j':
     s += 1
 
-if man == "j":
+if man == 'j':
     if snor > 10:
         s += 1
 
-if man == "n":
-    if haar == "j":
+if man == 'n':
+    if haar == 'j':
         s += 1
 
     if haar2 > 20:
@@ -65,11 +62,12 @@ if lengte > 150:
 if gewicht > 90:
     s += 1
 
-if certificaat == "j":
+if certificaat == 'j':
     s += 1
 
-if man == "j":
+if man == 'j':
     if s >= 8:
-        print("U mag gaan soliciteren!", s)
+        print('U mag gaan soliciteren!', s)
     else:
-        print("U mag helaas niet gaan soliciteren!", s)
+        print('U mag helaas niet gaan soliciteren!', s)
+        
