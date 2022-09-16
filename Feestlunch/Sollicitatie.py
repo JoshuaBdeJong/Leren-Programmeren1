@@ -13,7 +13,7 @@ man = input('Bent u een man? (J/N) ')
 if man == 'j':
     snor = int (input('Hoe breed is uw snor in cm? '))
 
-else:
+if man == 'n':
     haar = input('Is uw haar rood en krullig? (J/N) ')
     haar2 = int (input('Hoe lang is uw haar in cm? '))
 
@@ -65,9 +65,7 @@ if gewicht > 90:
 if certificaat == 'j':
     s += 1
 
-if man == 'j':
-    if s >= 8:
-        print('U mag gaan soliciteren!', s)
-    else:
-        print('U mag helaas niet gaan soliciteren!', s)
-        
+if s >= 8:
+    print('U bent aangenomen!', s)
+else:
+    print('U bent helaas niet aangenomen!', s)
