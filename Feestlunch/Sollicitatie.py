@@ -5,21 +5,29 @@ if ervaring <= 4:
     ervaring2 = int (input('Hoeveel jaar ervaring heeft u met jongleren? '))
     if ervaring2 <= 5:
         ervaring3 = int (input('Hoeveel jaar ervaring heeft u met acrobatiek? '))
+        if ervaring3 < 3:
+            raise NameError ('Kun je nou helemaal niks?!')
 diploma = input('Heeft u een MBO-4 diploma ondernemen? (J/N) ')
-bewijs = input('Heeft u een vrachtwagen rjibewijs? (J/N) ')
+bewijs = input('Heeft u een vrachtwagen rijbewijs? (J/N) ')
 hoed = input('Heeft u een hoge hoed? (J/N) ')
+if hoed == ('N'):
+    raise NameError ('Wat bezielt je om hier nog te komen?!')
 man = input('Bent u een man? (J/N) ')
 
-if man == 'j':
+if man == 'J':
     snor = int (input('Hoe breed is uw snor in cm? '))
 
-if man == 'n':
+if man == 'N':
     haar = input('Is uw haar rood en krullig? (J/N) ')
     haar2 = int (input('Hoe lang is uw haar in cm? '))
 
 lengte = int (input('Hoelang bent u in cm? '))
+if lengte > 220:
+    raise NameError ('Je past niet eens meer door de deur!')
 gewicht = int (input('Hoeveel weegt u in kg? '))
 certificaat = input("Heeft u het certificaat, 'overleven met gevaarlijk personeel'? (J/N) ")
+if certificaat == 'N':
+    raise NameError ('Hoe ga je nu klappen uitdelen?!')
 
 #aantal behaalde punten
 s = 0
